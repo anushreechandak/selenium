@@ -41,7 +41,7 @@ public class TeamMembers {
 		     	fileWriter.append(",");
 		     	fileWriter.append(text[1]);
 		     	fileWriter.append(",");
-		     	fileWriter.append("\"" + text[2].replace("\"","\\\"") + "\"");
+		     	fileWriter.append("\"" + text[2].replaceAll("\"", "\"\"") + "\"");
 		     	fileWriter.append("\n");
 	     	}
 		}
